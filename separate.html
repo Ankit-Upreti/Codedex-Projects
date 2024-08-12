@@ -9,6 +9,7 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <title>The Risel Valley: Grab the flavour here</title>
     <style>
         html {
@@ -41,7 +42,7 @@
             overflow: hidden;
             width: 100%;
             max-width: 500px;
-            height: auto;
+            height: 100%;
             margin: 0 auto;
             object-fit: cover;
             border: 10px solid rgb(255, 188, 3);
@@ -116,7 +117,8 @@
 
         label {
             margin-left: 0;
-            margin-right: 0;
+             margin-right: 60px;
+
         }
 
         p.form,
@@ -141,6 +143,9 @@
         div.container {
             display: block;
             margin: 0 auto;
+            height: 400px;
+            width: 400px;
+
         }
 
         div.container-2,
@@ -149,7 +154,7 @@
             max-width: 500px;
             height: auto;
             margin: 0 auto;
-            padding: 10px;
+            padding: 80px;
             border: 10px solid rgb(255, 188, 3);
             border-radius: 50%;
             background-color: bisque;
@@ -158,9 +163,10 @@
         }
 
         div.container-3 {
-            max-width: 350px;
-            height: auto;
+            max-width: 450px;
+            height: 450px;
             margin-top: 20px;
+            padding: 85px;
         }
 
         div.head-container {
@@ -203,6 +209,34 @@
             height: 10px;
             background-color: aliceblue;
         }
+        /* Your existing CSS styles */
+
+        @media (max-width: 768px) {
+        /* Styles for tablets and smaller screens */
+        #header-img {
+            max-width: 300px; /* Adjust image size */
+        }
+
+        nav ul {
+            flex-direction: column; /* Change navigation to vertical */
+        }
+
+        /* Other styles for tablet and mobile */
+        }
+
+        @media (max-width: 480px) {
+        /* Styles for mobile devices */
+        body {
+            padding: 10px; /* Reduce padding */
+        }
+
+        h1 {
+            font-size: 2rem; /* Reduce font size */
+        }
+
+        /* Other styles for mobile */
+        }
+
     </style>
 </head>
 
@@ -236,7 +270,6 @@
                             it's adjusting the spice level, adding extra ingredients, or catering to dietary needs,
                             your personalized culinary experience awaits. Enjoy the freedom to customize your
                             favorites, making every visit truly your own. <br><br>
-                            <a href="#order-form"><b>Order Now!!</b></a>
                         </p>
                     </div>
                     <li><a href="#order-form">Order Your bowl</a></li>
@@ -375,7 +408,7 @@
                 <textarea style="margin-left:5px;" name="personalised" id="personalised-order" rows="8" cols="35"
                     placeholder="e.g. - 'Allo sandwich with full loaded aloo paratha.......'"></textarea>
                 <br><br>
-                <input type="submit" value="Go to Checkout" style="margin-left: 500px;">
+                <input type="submit" value="Go to Checkout" style="width: 135px; margin:auto; display: block;" >
             </form>
         </section>
     </main>
